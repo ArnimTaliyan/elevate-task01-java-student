@@ -1,6 +1,6 @@
 //Validating User inputs
 
-package Day2.Validations;
+package Validations;
 
 import java.util.Scanner;
 

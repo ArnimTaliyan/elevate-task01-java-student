@@ -1,10 +1,10 @@
 //View feature to view students in list
 
-package Day2.Features;
+package Features;
 
 import java.util.List;
 import java.util.Scanner;
-import Day2.Models.Student;
+import Models.Student;
 
 public class ViewFeature implements Feature {
     @Override

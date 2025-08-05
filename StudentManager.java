@@ -1,14 +1,12 @@
-package Day2;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import Day2.Features.Feature;
-import Day2.MenuAndChoice.FeatureFactory;
-import Day2.Models.Student;
-import static Day2.MenuAndChoice.PrintMenu.printMenu;
-import static Day2.Validations.Util.getValidate;
-import static Day2.Validations.Util.getValidatedYesNo;
+import Features.Feature;
+import MenuAndChoice.FeatureFactory;
+import Models.Student;
+import static MenuAndChoice.PrintMenu.printMenu;
+import static Validations.Util.getValidate;
+import static Validations.Util.getValidatedYesNo;
 
 public class StudentManager {
     public static void main(String[] args) {

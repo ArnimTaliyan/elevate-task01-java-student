@@ -1,11 +1,11 @@
 //Add feature to add student in List
 
-package Day2.Features;
+package Features;
 
 import java.util.List;
 import java.util.Scanner;
-import Day2.Models.Student;
-import Day2.Validations.Util;
+import Models.Student;
+import Validations.Util;
 
 public class AddFeature implements Feature {
     @Override

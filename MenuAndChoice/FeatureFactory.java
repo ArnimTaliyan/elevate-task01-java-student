@@ -1,8 +1,8 @@
 //Checks for choice and return feature
 
-package Day2.MenuAndChoice;
+package MenuAndChoice;
 
-import Day2.Features.*;
+import Features.*;
 
 public class FeatureFactory {
     public static Feature getFeature(int choice) {

@@ -1,6 +1,6 @@
 //Class to implement encapsulation
 
-package Day2.Models;
+package Models;
 
 public class Student {
     private int id;

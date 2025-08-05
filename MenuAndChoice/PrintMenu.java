@@ -1,6 +1,6 @@
 //Provides menu to select feature
 
-package Day2.MenuAndChoice;
+package MenuAndChoice;
 
 public class PrintMenu {
     public static void printMenu() {
