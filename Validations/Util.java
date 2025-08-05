@@ -1,4 +1,6 @@
-package Day2;
+//Validating User inputs
+
+package Day2.Validations;
 
 import java.util.Scanner;
 
@@ -39,11 +41,23 @@ public class Util {
 
     // Validation for marks
     public static double getValidateMarks(Scanner input, String prompt) {
-        System.out.print(prompt);
-        while (!input.hasNextDouble()) {
-            System.out.print("Invalid input! Please enter a valid decimal number: ");
-            input.next();
+        double marks = -1;
+
+        while (true) {
+            System.out.print(prompt);
+            if (input.hasNextDouble()) {
+                marks = input.nextDouble();
+
+                if (marks >= 0 && marks <= 100) {
+                    break; // valid input, exit loop
+                } else {
+                    System.out.println("Marks should be between 0 and 100.");
+                }
+            } else {
+                System.out.println("Invalid input! Please enter a valid decimal number.");
+                input.next(); // clear invalid input
+            }
         }
-        return input.nextDouble();
+        return marks;
     }
 }
