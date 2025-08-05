@@ -1,37 +1,37 @@
 package Day2;
 
-import java.util.Scanner;
-
 public class Student {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+    private int id;
+    private String name;
+    private double marks;
 
-        int choice;
+    public Student(int id, String name, double marks) {
+        this.id = id;
+        this.name = name;
+        this.marks = marks;
+    }
 
-        System.out.println("Choose an option:");
-        System.out.println("1. Add Student");
-        System.out.println("1. Add Student");
-        System.out.println("2. View Student");
-        System.out.println("3. Delete Student");
-        System.out.println("4. Update Student");
-        System.out.print("Your choice: ");
+    public int getId() {
+        return id;
+    }
 
-        while (!input.hasNextInt()) {
-            System.out.print("Invalid input! Please enter a valid number: ");
-            input.next(); // clear the invalid input
-        }
-        choice = input.nextInt();
+    public void setId(int id) {
+        this.id = id;
+    }
 
-        Feature feature = null;
+    public String getName() {
+        return name;
+    }
 
-        switch (choice) {
-            case 1 -> feature = new AddFeature();
-            case 2 -> feature = new ViewFeature();
-            case 3 -> feature = new DeleteFeature();
-            case 4-> feature = new UpdateFeature();
-            default -> System.out.println("Invalid choice");
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        input.close();
+    public double getMarks() {
+        return marks;
+    }
+
+    public void setMarks(double marks) {
+        this.marks = marks;
     }
 }
