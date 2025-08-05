@@ -1,4 +1,6 @@
-package Day2;
+//Provides menu to select feature
+
+package Day2.MenuAndChoice;
 
 public class PrintMenu {
     public static void printMenu() {
@@ -7,6 +9,6 @@ public class PrintMenu {
         System.out.println("2. View Student");
         System.out.println("3. Delete Student");
         System.out.println("4. Update Student");
-        System.out.print("Your choice: ");
+        System.out.print("Enter your choice: ");
     }
 }
